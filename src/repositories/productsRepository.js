@@ -1,4 +1,4 @@
-import mockData from '../mockData.js'; // Assuming mockData is exported from a separate file
+import mockData from '../mockData.js';
 
 const filterProductsByIds = (ids) => {
   return mockData.filter((product) => ids.includes(product.id));
