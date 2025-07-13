@@ -1,11 +1,11 @@
-import express from 'express';
+import express, { Application } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import routes from './routes/index.js';
+import routes from './routes/index';
 
 dotenv.config();
-const app = express();
-const PORT = process.env.PORT || 3000;
+const app: Application = express();
+const PORT: number = parseInt(process.env.PORT || '3000', 10);
 
 app.use(cors({ origin: 'http://localhost:5173' }));
 app.use(express.json()); // Middleware to parse JSON requests

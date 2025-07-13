@@ -1,4 +1,6 @@
-const mockData = [
+import { Product } from './types';
+
+const mockData: Product[] = [
   {
     id: 1,
     name: 'Auriculares Inalámbricos Sony WH-1000XM4',
@@ -63,7 +65,6 @@ const mockData = [
     connectivity: 'Bluetooth 5.0',
     battery: '28 horas (con estuche)',
   },
-  // Otros productos...
 ];
 
 export default mockData;
